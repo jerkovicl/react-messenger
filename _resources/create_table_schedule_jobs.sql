@@ -3,7 +3,7 @@ IF NOT EXISTS schedule_jobs
 (
     id INT AUTO_INCREMENT,
     message_text TEXT,
-    time DATE,
+    time DATETIME,
     channel VARCHAR
 (255),
     status TINYINT NOT NULL,

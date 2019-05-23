@@ -10,12 +10,3 @@ Accept: "application/json"
     "time": "2019-05-14"
 }
 
-# send slack message
-
-POST https://hooks.slack.com/services/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
-
-Content-type: application/json
-{
-    "text": "Hello, world.",
-    "post_at": 1551891428
-}
