@@ -1,0 +1,21 @@
+POST http://localhost:4000/api/v1/schedulejobs/
+
+Content-Type: "application/json"
+Accept: "application/json"
+
+{
+    "messageText": "testing api post",
+    "channel": "Test",
+    "status": true,
+    "time": "2019-05-14"
+}
+
+# send slack message
+
+POST https://hooks.slack.com/services/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
+
+Content-type: application/json
+{
+    "text": "Hello, world.",
+    "post_at": 1551891428
+}
