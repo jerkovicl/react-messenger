@@ -2,7 +2,7 @@
 
 ## Setup
 
-- clone project `git clone github.com/jerkovicl/react-messenger.git`
+- clone project `git clone github.com/jerkovicl/react-messenger.git && cd react-messenger`
 - mysql dump file and scripts are in `_resources` folder
 - start Spring Boot App with `mvnw spring-boot:run`
 - start React App with `cd app && npm start`
