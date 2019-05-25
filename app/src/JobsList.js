@@ -15,7 +15,10 @@ class JobsList extends Component {
 
     fetch('/api/schedulejobs')
       .then(response => response.json())
-      .then(data => this.setState({ jobs: data, isLoading: false }));
+      .then(data => this.setState({ jobs: data, isLoading: false }))
+      .catch(error => {
+        console.log('request failed', error, this.state);
+      });
   }
 
   async remove(id) {
@@ -35,7 +38,18 @@ class JobsList extends Component {
     const { jobs, isLoading } = this.state;
 
     if (isLoading) {
-      return <p>Loading...</p>;
+      return (
+        <div>
+          <AppNavbar />
+          <Container fluid>
+            <div className="float-right">
+              <Button color="success" tag={Link} to="/jobs/new">
+                Add Job
+              </Button>
+            </div>
+          </Container>
+        </div>
+      );
     }
 
     const jobsList = jobs.map(job => {
