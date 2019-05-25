@@ -33,7 +33,7 @@ CREATE TABLE `hibernate_sequence` (
 
 LOCK TABLES `hibernate_sequence` WRITE;
 /*!40000 ALTER TABLE `hibernate_sequence` DISABLE KEYS */;
-INSERT INTO `hibernate_sequence` VALUES (82);
+INSERT INTO `hibernate_sequence` VALUES (86);
 /*!40000 ALTER TABLE `hibernate_sequence` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -51,7 +51,7 @@ CREATE TABLE `schedule_jobs` (
   `channel` varchar(255) DEFAULT NULL,
   `status` tinyint(4) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=82 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=86 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -60,7 +60,7 @@ CREATE TABLE `schedule_jobs` (
 
 LOCK TABLES `schedule_jobs` WRITE;
 /*!40000 ALTER TABLE `schedule_jobs` DISABLE KEYS */;
-INSERT INTO `schedule_jobs` VALUES (67,'dasda','2019-05-23 20:30:01','web-apps',1),(68,'hello slack','2019-05-23 20:32:48','web-apps',1),(69,'hello slack in future','2019-05-23 20:45:01','web-apps',1),(70,'ads','2019-05-23 20:36:20','web-apps',1),(71,'message','2019-05-23 20:46:40','web-apps',1),(79,'test','2019-05-23 21:16:36','web-apps',1),(80,'test merge','2019-05-23 22:55:01','web-apps',1),(81,'test status','2019-05-23 23:05:01','web-apps',1);
+INSERT INTO `schedule_jobs` VALUES (67,'dasda','2019-05-23 20:30:01','web-apps',1),(68,'hello slack','2019-05-23 20:32:48','web-apps',1),(69,'hello slack in future','2019-05-23 20:45:01','web-apps',1),(70,'ads','2019-05-23 20:36:20','web-apps',1),(71,'message','2019-05-23 20:46:40','web-apps',1),(79,'test','2019-05-23 21:16:36','web-apps',1),(80,'test merge','2019-05-23 22:55:01','web-apps',1),(81,'test status','2019-05-23 23:05:01','web-apps',1),(82,'init data','2019-05-25 12:54:52','web-apps',1),(83,'slack in future 1','2020-03-04 12:59:26','web-apps',0),(84,'slack in future 2','2020-05-25 12:59:00','web-apps',0),(85,'slack in future 3','2020-04-08 13:00:13','web-apps',0);
 /*!40000 ALTER TABLE `schedule_jobs` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -73,4 +73,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-05-23 23:10:25
+-- Dump completed on 2019-05-25 13:03:12
